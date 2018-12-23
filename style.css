@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    height: 500px;
+}
+
+.ball{
+    height: 35px;
+    width: 35px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 663px;
+    z-index: 1;
+    top: 254px;
+}
+.btn1{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    height: 50px;
+    width: 104px;
+    font-size: 20px;
+}
+.btn2{
+    top: 265px;
+}
+@keyframes move {
+    from {
+        transform : rotateZ(0deg)
+         }
+    to {
+        transform : rotateZ(360deg)
+       }
+    }
+
+    @keyframes ball-roll{
+        from {transform: rotateZ(0deg)}
+        to {transform: rotateZ(360deg)}
+    }
+.circle1{
+    height: 160px;
+    width: 160px;
+    background: radial-gradient(circle, #f9dfac 42%, #f3c964 72%);
+    border-radius: 50%;
+    position: absolute;
+    border: 8px solid #cc892e;
+    margin: auto;
+    top: 189px;
+    left: 602px;
+    animation: move 2s 10  linear;
+    
+}
+.line1, .line2{
+    height: 100px;
+    width: 7px;
+    background: #988383;
+    position: absolute;
+    left: 47%;
+    top: 18%;
+    border-radius: 20px;
+    background: radial-gradient(#c57964 23%, #4c0700);
+}
+.line2{
+    transform: rotate(90deg);
+}
+
+.line-dot1, .line-dot2 {
+    height: 10px;
+    width: 10px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    border-radius: 50%;
+    box-shadow: 50px 46px;
+}
+.line-dot2{
+transform: translate(50px,-47px);
+}
+.circle2{
+     height: 220px;
+    width: 220px;
+    position: absolute;
+    left: 571px;
+    top: 159px;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(#00824e 65%, #edd8ba 66%, #00824e 70%);
+    animation: move 2s 10 linear;
+}
+.lines1, .lines2, .lines3, .lines4, .lines5, .lines6, .lines7, .lines8, .lines9, .lines10{
+    height: 204px;
+    width: 2px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 8px;
+}
+.lines2{
+    transform: rotate(90deg);
+}
+.lines3{
+    transform: rotate(45deg);
+}
+.lines4{
+    transform: rotate(135deg);
+}
+.lines5{
+transform: rotate(22.5deg);
+}
+.lines6{
+    transform: rotate(157.5deg);
+}
+.lines7{
+    transform: rotate(67.5deg);
+}
+.lines8{
+  transform: rotate(112.5deg);
+}
+.circle3{
+    height: 330px;
+    width: 330px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    left: 513px;
+    z-index: -2;
+    top: 105px;
+    animation: move 2s 10 linear;
+
+}
+
+
+.no1, .no2, .no3, .no4, .no5, .no6, .no7, .no8{
+    height: 3px;
+    width: 332px;
+    background: white;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 163px;
+    box-shadow: 2px 1px 4px white;
+}
+.no2{
+    transform: rotate(45deg);
+}
+.no3{
+    transform: rotate(135deg);
+}
+.no4{
+    transform: rotate(22.5deg);
+}
+.no5{
+    transform: rotate(157.5deg);
+}
+.no6{
+    transform: rotate(67.5deg);
+}
+.no7{
+    transform: rotate(112.5deg);
+}
+.no8{
+    transform: rotate(180deg);
+}
+.circle3 span {
+    position: absolute;
+    top: 7px;
+    left: 22px;
+    font-size: 36px;
+    font-weight: bold;
+    transform: rotate(79deg);
+    color: white;
+}
+.circle3 span.one{
+    transform: rotate(-100deg);
+}
+.circle3 span.two{
+  background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    top: -56.5px;
+    transform: rotate(270deg);
+    left: 8px;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 3px 5px black;
+    padding-top: 8px;
+}
+.circle3 span.two::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 31px;
+    top: 3px;
+    left: 22px;
+    background: black;
+    transform: rotate(24deg);
+}
+
+.circle3 span.three{
+    top: 116px;
+    left: 188px;
+    transform: rotate(-191deg);
+}
+.circle3 span.four{
+    transform: rotate(-104deg);
+}
+.circle3 span.five{
+     top: -137px;
+    left: 66px;
+    transform: rotate(-44deg);
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+    padding-top: 5px;
+}
+.circle3 span.five::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 56px;
+    top: -1px;
+    left: 20px;
+    background: black;
+    transform: rotate(22deg);
+}
+
+.circle3 span.six{
+    transform: rotate(-112deg);
+    top: -4px;
+    left: 10px;
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+    padding-top: 8px;
+}
+.circle3 span.six::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 58px;
+    top: 0px;
+    left: 14px;
+    background: black;
+    transform: rotate(21deg);
+}
+.circle3 span.seven{
+    padding-top: 8px;
+    top: 101px;
+    left: 168px;
+    transform: rotate(158deg);
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+}
+.circle3 span.seven::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 57px;
+    top: 1px;
+    left: 16px;
+    background: black;
+    transform: rotate(22deg);
+}
+
+.circle3 span.eight{
+   background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    top: -3.5px;
+    transform: rotate(248deg);
+    left: 8px;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+    padding-top: 8px;
+}
+
+.circle3 span.eight::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 56px;
+    top: 3px;
+    left: 16px;
+    background: black;
+    transform: rotate(22deg);
+}
+
+.circle3 span.nine{
+    padding-top: 8px;
+    top: -163px;
+    left: 113.5px;
+    transform: rotate(-22deg);
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+}
+.circle3 span.nine::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 56px;
+    top: 3px;
+    left: 16px;
+    background: black;
+    transform: rotate(22deg);
+}
+.circle3 span.ten{
+    padding-top: 8px;
+    transform: rotate(-112deg);
+    left: 11px;
+    top: -4px;
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+}
+.circle3 span.ten::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 56px;
+    top: 0px;
+    left: 16px;
+    background: black;
+    transform: rotate(21deg);
+}
+.circle3 span.eleven{
+    padding-top: 8px;
+    top: 100px;
+    left: 167px;
+    transform: rotate(158deg);
+    background: black;
+    width: 49px;
+    height: 63px;
+    text-align: center;
+    border-radius: 1px 9px 100px 44px;
+    box-shadow: 0px -3px black;
+}
+.circle3 span.eleven::after{
+    content: "";
+    z-index: -1;
+     position: absolute;
+    display: block;
+    width: 34px;
+    height: 61px;
+    top: -2px;
+    left: 16px;
+    background: black;
+    transform: rotate(21deg);
+}
+.circle3 span.twelve{
+    top: -98px;
+    left: 263px;
+    transform: rotate(50deg);
+}
+.circle3 span.thirteen{
+    top: -157px;
+    left: 173px;
+    transform: rotate(5deg);
+}
+.circle3 span.fourteen{
+    transform: rotate(-100deg);
+    left: 12px;
+}
+.circle3 span.fifteen{
+    top: -46px;
+    left: 282px;
+    transform: rotate(75deg);
+}
+.circle3::before{
+    content: "";
+
+}
+
+.circle4{
+    
+    height: 413px;
+    width: 413px;
+    background: radial-gradient(circle, transparent 55%,white 57%, #00824e 20%);
+    position: absolute;
+    left: 473px;
+    top: 62px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        transform: scale(0.6);
+    }
+}
