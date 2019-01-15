@@ -3,31 +3,69 @@
 }
 .container{
     position: relative;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+body {
+    background: #22c1c3;  /* fallback for old browsers */
+
+    background: radial-gradient( blue, #f2d1d2);
+
 }
 
 .ball{
     height: 35px;
     width: 35px;
-    background: blue;
+    background: indianred;
     border-radius: 50%;
     position: absolute;
-    left: 663px;
     z-index: 1;
-    top: 254px;
+}
+.think {
+    position: relative;
+    text-transform: capitalize;
+    color: crimson;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: #000 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 33px;
 }
 .btn1{
-    position: absolute;
-    left: 300px;
-    top: 200px;
-    height: 50px;
-    width: 104px;
+    height: 40px;
+    width: 200px;
+    margin-top: 111px;
+    background: linear-gradient(to right, red, blue);
+    color: #fff;
+    font-weight: normal;
     font-size: 20px;
+    border: none;
 }
-.btn2{
-    top: 265px;
+.btn1:hover {
+    box-shadow: 2px 1px 5px;
 }
-@keyframes move {
+.btn1::after{
+    /* content: "";
+    position: absolute;
+    height: 6px;
+    width: 86px;
+    background: #c3b6b6;
+    top: 42%;
+    left: 96%;
+    z-index: -1; */
+
+}
+.btn1::before{
+    content: "";
+}
+@keyframes moveaa {
     from {
         transform : rotateZ(0deg)
          }
@@ -48,8 +86,6 @@
     position: absolute;
     border: 8px solid #cc892e;
     margin: auto;
-    top: 189px;
-    left: 602px;
     animation: move 2s 10  linear;
     
 }
@@ -84,8 +120,6 @@ transform: translate(50px,-47px);
      height: 220px;
     width: 220px;
     position: absolute;
-    left: 571px;
-    top: 159px;
     z-index: -1;
     border-radius: 50%;
     background: radial-gradient(#00824e 65%, #edd8ba 66%, #00824e 70%);
@@ -126,9 +160,7 @@ transform: rotate(22.5deg);
     background: red;
     position: absolute;
     border-radius: 50%;
-    left: 513px;
     z-index: -2;
-    top: 105px;
     animation: move 2s 10 linear;
 
 }
@@ -411,12 +443,43 @@ transform: rotate(22.5deg);
     width: 413px;
     background: radial-gradient(circle, transparent 55%,white 57%, #00824e 20%);
     position: absolute;
-    left: 473px;
-    top: 62px;
     border-radius: 50%;
 }
 @media screen and (max-width: 500px) {
     .container {
-        transform: scale(0.6);
+        transform: scale(0.8);
     }
+    .btn1{
+
+    }
+    .think{
+
+    }
+}
+
+.casino-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: relative;
+}
+.casino-container::after {
+    content: "";
+    position: absolute;
+    bottom: -112px;
+    height: 80px;
+    width: 10px;
+    background: red;
+}
+
+.casino-container::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -56px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid red;
 }
